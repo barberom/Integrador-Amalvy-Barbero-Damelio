@@ -1,0 +1,76 @@
+/*  Manual de marca:
+        paleta de colores:
+                Negro #121212
+                Gris #2E2E2E
+                Rojo  #E63946
+                Blanco #FFFFFF
+        Tipografia:
+            Titulares: Oswald
+            general: Roboto
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #2E2E2E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2%;
+}
+
+    header img{
+        width: 16%;
+        height: 100%;
+    }
+
+    header form{
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        height: 50%; /*NO FUNCIONA, no se porque pero no renta nada poner px porq despues se rompe en responsive*/
+    }
+
+        header form input{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border: none;
+            width: 75%;
+            height: 100%;
+        }
+
+        header form button{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border: none;
+            background-color: #E63946;
+            color: #ffffff;
+            width: 25%;
+            height: 100%;
+        }
+
+    header nav{
+        width: 100%;
+        max-width: 16%;
+    }
+
+        header nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        header nav ul li a{
+            color: white;
+        }
