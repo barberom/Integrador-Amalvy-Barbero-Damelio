@@ -72,4 +72,71 @@ header{
 
         header nav ul li a{
             color: white;
+        } 
+
+/*LOGIN*/
+.bodyLogin{
+    background-image: url("../materiales/imagenes/bmw-m2-nfs-raining-4k-ww.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
         }
+
+    .mainLogin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        margin: 100px 0px;
+    
+
+    }
+
+        .divlog2{
+            background: rgba(0, 0, 0, 0.8); 
+            padding: 40px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+            color: white;
+            
+        }
+
+            .divlog2 .logo{
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: #E63946; 
+                letter-spacing: 2px;
+                font-family: "Oswald", sans-serif;
+            }
+
+            .divlog2 input{
+                width: 100%;
+                padding: 12px;
+                margin: 10px 0;
+            
+                border-radius: 8px;
+                font-size: 14px;
+            }
+
+            .divlog2 button {
+                width: 100%;
+                padding: 12px;
+                margin-top: 15px;
+                border: none;
+                border-radius: 8px;
+                background-color: #E63946;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .divlog2 .options {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+>>>>>>> 2bba7d6ac8b83563340db400724bcc46dfaad96c
