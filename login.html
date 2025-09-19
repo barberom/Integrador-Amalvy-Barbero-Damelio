@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <meta name="viewport" content=
+				"width=device-wid th, initial-scale=1">
+    </head>
+    <body class="body2">
+   <header>
+        <img src="./materiales/imagenes/logo.png"> <!--La imagen no es definitiva, de hecho deberiamos cambiarla, pero el aspect ratio deberia ser de 2:1-->
+        <form action="" method="get"> <!--NO SE QUE VA EN ACTION-->
+            <input id="buscar_input" type="text" name="busqueda" placeholder="  Buscar..." value="">
+            <button id="buscar_boton">Buscar</button>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section class="contenedor1">
+            <h1 class="h111">BIENVENIDO</h1>
+            <form class="form1" action="login.html">
+                <article class="article22"><p class="texto2">Email</p> <!--EMAIL-->
+                    <label for="email"></label>
+                    <input id="email" type="email" name="email" value="" placeholder="Email" required>
+                    <p class="texto3">Obligatorio.</p>
+                </article>
+                <article class="article22"><p class="texto2">Contraseña</p> <!--CONTRASEÑA-->
+                    <label for="contraseña"></label>
+                    <input id="contraseña" type="password" name="contraseña" value="" placeholder="Contraseña" required>
+                    <p class="texto3">Obligatorio.</p>
+                </article>
+                <article class="article22">
+                    <label id="recordarme" for="terminos"> <!--RECORDARME-->
+                        <input type="checkbox" name="recordarme" value="si">Recordarme
+                    </label>
+                <p class="texto3">La combinación ingresada de email y contraseña no es válida.</p>
+                </article>
+                <article class="article33"> <!--BOTON-->
+                    <button id="ingresar" type="submit">Ingresar</button>
+                </article>
+            </form>
+        </section>
+    </body>
+</html>
