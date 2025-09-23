@@ -7,7 +7,7 @@
         <meta name="viewport" content=
 				"width=device-wid th, initial-scale=1">
     </head>
-    <body class="body3">
+    <body class="bodyLogin">
         <header>
         <img src="./materiales/imagenes/logo.png"> <!--La imagen no es definitiva, de hecho deberiamos cambiarla, pero el aspect ratio deberia ser de 2:1-->
         <form action="resultadosBusqueda.html" method="get"> <!--NO SE QUE VA EN ACTION-->
@@ -22,83 +22,35 @@
             </ul>
         </nav>
     </header>
-        <section class="contenedor2">
-            <h1 class="h111">REGISTRATE</h1>
-            <form class="form2" action="registro.html" method="get">
-                <article class="article333"> <p class="text1">Nombre</p><!--NOMBRE-->
-                    <label for="nombre"></label>
-                    <input id="nombre" type="text" name="nombre" value="" placeholder="Ingrese su nombre" required>
-                    <p class="texto3">Obligatorio.</p>
-                </article>
-                <article class="article333"> <p class="text1">Email</p><!--EMAIL-->
-                    <label for="email"></label>
-                    <input id="email" type="email" name="email" value="" placeholder="Ingrese su email" required>
-                    <p class="texto3">Obligatorio.</p>
-                </article>
-                <article class="article333"> <p class="text1">Contraseña</p><!--CONTRASEÑA-->
-                    <label for="contraseña"></label>
-                    <input id="contraseña" type="password" name="contraseña" value="" placeholder="Ingrese su contraseña">
-                    <p class="texto3">Obligatorio.</p>
-                </article>
-                <article class="article333"> <h1 class="text2">País de nacimiento</h1> <!--DESPLEGABLE-->
-                    <label for="nacionalidad"></label>
-                    <select name="nacionalidad" id="nacionalidad">
-                        <option value="arg">Argentina</option>
-                        <option value="bra">Brasil</option>
-                        <option value="uru">Uruguay</option>
-                        <option value="chi">Chile</option>
-                        <option value="par">Paraguay</option>
-                    </select>
-                    <p class="texto3">Obligatorio.</p>
-                </article>
-                <article>
-                    <h1 class="text2">Género</h1>
-                </article>
-                <article class="genero"> <!--RADIOBUTTONS-->
-                    <label for="genero">
-                        <input type="radio" name="genero" value="mas"> Masculino
-                    </label>
-                    <label>
-                        <input type="radio" name="genero" value="fem"> Femenino
-                    </label>
-                    <label>
-                        <input type="radio" name="genero" value="otr"> Otro
-                    </label>
-                </article>
-                <article>
-                    <h1 class="text2">Hobbies</h1>
-                </article>
-                <article class="hobbies"> <!--CHECHBOX-->
-                    <label for="hobbies">
-                        <input type="checkbox" name="hobbies" value="fut"> Fútbol
-                    </label>
-                    <label>
-                        <input type="checkbox" name="hobbies" value="mus"> Música
-                    </label>
-                    <label>
-                        <input type="checkbox" name="hobbies" value="vid"> Videojuegos
-                    </label>
-                    <label>
-                        <input type="checkbox" name="hobbies" value="coc"> Cocinar
-                    </label>
-                    <label>
-                        <input type="checkbox" name="hobbies" value="pin"> Pintar
-                    </label>
-                </article>
-                <article class="article333"> <h1 class="text2">Dejanos tus comentarios</h1> <!--TEXTAREA-->
-                    <label for="info"></label><br>
-                    <textarea name="info" id="info" placeholder="Ingrese su texto"></textarea>
-                </article>
-                <article class="article333">
-                    <label for="terminos"> <!--TÉRMINOS-->
-                        <input type="checkbox" name="terminos" value="si" required> Acepto los términos y condiciones.
-                    </label>
-                </article>
-                <article class="botones"> <!--BOTONES-->
-                    <button class="bot" type="submit">Enviar</button>
-                    <button class="bot" type="reset">Restablecer</button>
-                </article>
-            </form>
+        <main class="mainLogin">
+            <div class="divlog2">
+                <div class="logo">AutoDrive</div>
+                <h1>Registrate</h1>
+                <form action="registro.html" method="get">
+                    <article class="email"> <p class="text1"></p><!--EMAIL-->
+                        <label for="email"></label>
+                        <input type="email" name="email" value="" placeholder="Ingrese su email" required>
+                    </article>
+                    <article class="password"> <p class="text1"></p><!--CONTRASEÑA-->
+                        <label for="contraseña"></label>
+                        <input type="password" name="contraseña" value="" placeholder="Ingrese su contraseña">
+                    </article>
+                    <article class="password"> <p class="text1"></p><!--REPETIR CONTRASEÑA-->
+                        <label for="contraseña"></label>
+                        <input id="contraseña" type="password" name="contraseña" value="" placeholder="Repita su contraseña">
+                    </article>
+                    <article class="options">
+                        <label class="terminos" for="terminos"> <!--TÉRMINOS-->
+                            <input id="condiciones" type="checkbox" name="terminos" value="si" required> Acepto los términos y condiciones.
+                        </label>
+                    </article>
+                    <article> <!--BOTONES-->
+                        <button type="submit">Enviar</button>
+                        <p id="ya_tengo"><a href="./login.html" id="tengo">Ya tengo una cuenta</a></p>
+                    </article>
+                </form>
+                </div>
+            
 
         </section>
     </body>

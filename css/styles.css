@@ -132,11 +132,55 @@ header{
                 font-weight: bold;
             }
 
-            .divlog2 .options {
+            .options {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
                 font-size: 14px;
                 margin-top: 10px;
+                justify-content: flex-start;
+                width: 100%;
             }
+
+            .options label{
+                display: flex;
+                align-items: center;
+                gap: 2px;
+            }
+
+            .terminos{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                font-size: 14px;
+            }
+
+            #condiciones{
+                width: 15%;
+            }
+
+
+
+
+
+
+
+/*REGISTER*/
+
+#ya_tengo{
+    margin-top: 10px;
+}
+
+#tengo{
+    text-decoration: underline;
+    color: #E63946;
+}
+
+.divlog2 h1{
+    margin-bottom: 10px;
+}
+
+
+
+
+
 
