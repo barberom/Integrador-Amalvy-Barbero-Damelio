@@ -78,14 +78,14 @@ header{
 main{
     background-color: #121212;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .barra-lateral{
     background-color: #2E2E2E;
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 20%;
     padding: 15px;
     color: #ffffff;
     gap: 20px;
@@ -99,7 +99,18 @@ main{
     .barra-lateral a{
         color: #ffffff;
     }
+.principal{
+    padding: 3%;
+}
+.principal h1{
+    color: #ffffff;
+}
 
+    .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    }
 article{
     background-color: #2E2E2E;
     color: #ffffff;
@@ -110,8 +121,21 @@ article{
     flex-direction: column;
     justify-content: space-between;
     gap: 15px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 15px;
 }
+    article img{
+        height: 70%;
+        width: 100%;
+    }
+    article button{
+        color: #ffffff;
+        background-color: #E63946;
+        align-self: flex-start;
+        width: 75px;
+        height: 30px;
+        border: 0px;
+    }
 
 /*LOGIN*/
 .bodyLogin{
