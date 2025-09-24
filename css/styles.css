@@ -27,10 +27,19 @@ header{
     align-items: center;
     padding: 0px 2%;
 }
+    header div{
+        width: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+    header div h1{
+        color: #E63946;
+    }
 
-    header img{
-        width: 16%;
-        height: 100%;
+    header div img{
+        width: 50%;
     }
 
     header form{
@@ -127,10 +136,17 @@ header{
             padding-bottom: 15px;
         }
             .container article img{
-                    height: 70%;
-                    width: 100%;
-                }
-            .container article button{
+                height: 70%;
+                width: 100%;
+            }
+            .container article div{
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 15px;
+            }
+                .container article div button{
                     color: #ffffff;
                     background-color: #E63946;
                     align-self: flex-start;
@@ -141,7 +157,7 @@ header{
 
 /*LOGIN*/
 .bodyLogin{
-    background-image: url("../materiales/imagenes/bmw-m2-nfs-raining-4k-ww.jpg");
+    background-image: url("../materiales/imagenes/fodo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
         }
