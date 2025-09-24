@@ -74,11 +74,13 @@ header{
             color: #ffffff;
             width: 25%;
             padding: 5px;
+            font-size: 1.2vw;
         }
+
 
     header nav{
         width: 100%;
-        max-width: 16%;
+        max-width: 200px;
     }
 
         header nav ul{
@@ -92,6 +94,12 @@ header{
         header nav ul li a{
             color: white;
         } 
+
+
+
+
+
+        
 /*INDEX*/
 
 .main-index{
@@ -101,10 +109,10 @@ header{
 }
 
 .barra-lateral{
-    background-color: #2E2E2E;
+    background-color: #1E1E1E;
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 350px;
     padding: 15px;
     color: #ffffff;
     gap: 20px;
@@ -119,8 +127,14 @@ header{
         color: #ffffff;
     }
     
+    .barra-lateral h2{
+        color: #E63946;
+    }
+
 .principal{
     padding: 3%;
+    display: flex;
+    flex-direction: column;
 
 }
     .principal h1{
@@ -130,13 +144,15 @@ header{
     .container{
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        justify-content: flex-start;
+        gap: 15px;
+    
     }
         .container article{
             background-color: #2E2E2E;
             color: #ffffff;
             margin: 15px 0px;
-            width: 390px;
+            width: 360px;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -146,7 +162,7 @@ header{
             padding-bottom: 15px;
         }
             .container article img{
-                height: 70%;
+                height: 270px;
                 width: 100%;
             }
             .container article div{
@@ -177,7 +193,14 @@ footer{
         width: 50%;
     }
 
+
+
+
+
 /*LOGIN*/
+
+
+
 .bodyLogin{
     background-image: url("../materiales/imagenes/fodo.jpg");
     background-repeat: no-repeat;
