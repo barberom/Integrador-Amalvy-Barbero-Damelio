@@ -27,20 +27,26 @@ header{
     align-items: center;
     padding: 0px 2%;
 }
-    header div{
-        width: 20%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 10px;
-    }
-    header div h1{
-        color: #E63946;
-    }
+    header a {
+            width: 20%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+        }
 
-    header div img{
-        width: 50%;
-    }
+        header a div{
+
+        }
+        
+        header a h1{
+            color: #E63946;
+            width: 50%;
+        }
+
+        header a img{
+            width: 40%;
+        }
 
     header form{
         display: flex;
