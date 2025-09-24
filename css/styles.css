@@ -16,6 +16,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+h1{
+    font-family: "Oswald", sans-serif;
+}
+
 a{
     text-decoration: none;
 }
@@ -160,6 +164,18 @@ header{
                     height: 30px;
                     border: 0px;
                 }
+
+footer{
+    padding: 10px;
+    background-color: #E63946;
+    color: #ffffff;
+    align-items: center;
+}
+    footer p{
+        font-family: "Roboto", sans-serif;
+        margin: 0px 40%;
+        width: 50%;
+    }
 
 /*LOGIN*/
 .bodyLogin{
