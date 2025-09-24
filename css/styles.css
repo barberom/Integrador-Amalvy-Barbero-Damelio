@@ -75,7 +75,7 @@ header{
         } 
 /*INDEX*/
 
-main{
+.main-index{
     background-color: #121212;
     display: flex;
     justify-content: space-between;
@@ -99,43 +99,45 @@ main{
     .barra-lateral a{
         color: #ffffff;
     }
+    
 .principal{
     padding: 3%;
+
 }
-.principal h1{
-    color: #ffffff;
-}
+    .principal h1{
+        color: #ffffff;
+    }
 
     .container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
     }
-article{
-    background-color: #2E2E2E;
-    color: #ffffff;
-    margin: 15px 0px;
-    width: 380px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 15px;
-    font-family: "Roboto", sans-serif;
-    padding-bottom: 15px;
-}
-    article img{
-        height: 70%;
-        width: 100%;
-    }
-    article button{
-        color: #ffffff;
-        background-color: #E63946;
-        align-self: flex-start;
-        width: 75px;
-        height: 30px;
-        border: 0px;
-    }
+        .container article{
+            background-color: #2E2E2E;
+            color: #ffffff;
+            margin: 15px 0px;
+            width: 380px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+            font-family: "Roboto", sans-serif;
+            padding-bottom: 15px;
+        }
+            .container article img{
+                    height: 70%;
+                    width: 100%;
+                }
+            .container article button{
+                    color: #ffffff;
+                    background-color: #E63946;
+                    align-self: flex-start;
+                    width: 75px;
+                    height: 30px;
+                    border: 0px;
+                }
 
 /*LOGIN*/
 .bodyLogin{
