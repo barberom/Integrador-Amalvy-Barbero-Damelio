@@ -24,6 +24,10 @@ a{
     text-decoration: none;
 }
 
+li{
+    list-style: none;
+}
+
 header{
     background-color: #1E1E1E;
     display: flex;
@@ -310,3 +314,93 @@ footer{
 
 
 
+/* DETALLE DEL PRODUCTO*/
+
+
+
+.imagen{
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.main-index2{
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: red 2px solid;
+}
+
+.barra-lateral2{
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding: 15px;
+    color: #ffffff;
+    gap: 20px;
+}
+    .barra-lateral2 ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1.2vw;
+    }
+    .barra-lateral2 a{
+        color: #ffffff;
+    }
+    
+    .barra-lateral2 h2{
+        color: #E63946;
+        font-size: 2vw;
+    }
+
+.principal2{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 100%
+
+}
+    .principal2 h1{
+        color: #ffffff;
+    }
+    .principal2 article p{
+        color: white;
+        width: 100%;
+    }
+
+.tags{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+    .tags ol{
+        display: flex;
+        width: 23%;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+    }
+    .tags ol li{
+        color: #ffffff;
+        display: flex;
+        background-color: #E63946;
+        padding: 5px;
+        border-radius: 7px;
+        align-items: center;
+        height: 100%;
+    }
+
+    .tags div{
+        display: flex;
+        justify-content: flex-end;
+        background-color: #E63946;
+        color: #ffffff;
+        padding: 3px 7px;
+        border-radius: 7px;
+        height: 100%;
+        align-items: center;
+    }
