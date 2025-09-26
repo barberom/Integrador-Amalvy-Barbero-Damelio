@@ -570,9 +570,6 @@ footer{
 
 
 @media (max-width: 320px){
-    header{
-        
-    }
         header a{
             width: 20%;
         }
