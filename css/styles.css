@@ -457,26 +457,39 @@ footer{
     header a {
         width: 25%;
     }
+    header a img {
+        width: 40%;
+    }
     header a h1{
-        font-size: 20px;
+        font-size: 2.6vw;
         width: auto;
     }
     header form{
-        width: 30%;
+        width: 20%;
     }
+        header form input{
+            height: 100%;
+        }
     header nav{
         width: 23%;
     }
-
-    .barra-lateral{
-        min-width: 160px;
+    #buscar_boton p{
+        font-size: 1vw;
     }
-
+    .barra-lateral{
+        min-width: 20%;
+    }
+        .barra-lateral ul{
+            font-size: 1.7vw;
+        }
+        .barra-lateral h2{
+            font-size: 2.5vw;
+        }
     .container article{
-        width: 550px;
+        width: 220px;
     }
         .container article img{
-            height: auto;
+            height: 40%;
         }
     footer p{
         margin: 0px 32%;
