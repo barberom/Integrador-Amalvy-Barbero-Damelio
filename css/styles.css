@@ -358,7 +358,7 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 10px;
-        font-size: 1.2vw;
+        font-size: 1.4vw;
     }
     .barra-lateral2 a{
         color: #ffffff;
@@ -366,7 +366,7 @@ footer{
     
     .barra-lateral2 h2{
         color: #E63946;
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
 
 .principal2{
@@ -388,13 +388,13 @@ footer{
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
+    align-items: center;
 }
     .tags ol{
         display: flex;
-        width: 23%;
+        width: 250px;
         justify-content: space-between;
         align-items: center;
-        padding-top: 5px;
     }
     .tags ol li{
         color: #ffffff;
@@ -520,4 +520,50 @@ footer{
     .divlog2{
         width: 310px;
     }
+    .principal2 article p{
+        font-size: 10px;
+    }
+    .tags ol{
+        width: 150px;
+        margin-right: 1%;
+    }
+        .tags ol li{
+            font-size: 8px;
+        }
+        .tags div p{
+            font-size: 8px;
+        }
+    .stats{
+    margin: 30px 0;
+}
+
+    .stats article{
+        width: 30%;
+        height: 150px;
+    }
+        .stats article img{
+            width: 60%;
+        }
+        .stats article p{
+            margin-top: 15px;
+        }
+
+    .reseñas{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+        .reseñas article{
+            margin-top: 10px;
+            gap: 5px;
+            width: 100%;
+            padding: 20px;
+        }
+
+            .reseñas article img{
+                width: 40%;
+            }
+
+        .usuario{
+            font-size: 510px;
+        } 
 }
