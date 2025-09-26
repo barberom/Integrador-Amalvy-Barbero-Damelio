@@ -112,7 +112,7 @@ header{
     background-color: #1E1E1E;
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 250px;
     padding: 15px;
     color: #ffffff;
     gap: 20px;
@@ -451,3 +451,20 @@ footer{
             font-size: 30px;
         }
 
+@media (max-width: 768px) {
+    
+    header a {
+        width: 25%;
+    }
+    header a h1{
+        font-size: 20px;
+        width: auto;
+    }
+    header form{
+        width: 30%;
+    }
+    header nav{
+        width: 23%;
+    }
+    
+}
