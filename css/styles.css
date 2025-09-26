@@ -106,6 +106,7 @@ header{
     background-color: #121212;
     display: flex;
     justify-content: space-between;
+
 }
 
 .barra-lateral{
@@ -466,5 +467,16 @@ footer{
     header nav{
         width: 23%;
     }
+
+    .barra-lateral{
+        min-width: 160px;
+    }
+
+    .container article{
+        width: 550px;
+    }
+        .container article img{
+            height: auto;
+        }
     
 }
