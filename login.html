@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Login</title>
+        <meta charset="UTF-8">
+        <title>Log in</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/styles.css">
-        <meta name="viewport" content=
-				"width=device-wid th, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     </head>
     <body class="bodyLogin">
-   <header>
-        <a href="index.html">
- 
-                <img src="./materiales/imagenes/logo2.png">  
-                <h1>AutoDrive</h1>
+        <header>
+            <a href="index.html">
+    
+                    <img src="./img/logo2.png">  
+                    <h1>AutoDrive</h1>
 
-        </a>
-        <form action="resultadosBusqueda.html" method="get"> <!--NO SE QUE VA EN ACTION-->
-            <input id="buscar_input" type="text" name="busqueda" placeholder="  Buscar..." value="">
-            <button id="buscar_boton">Buscar</button>
-        </form>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="registro.html">Registro</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="mainLogin">
-            <div class="divlog2">
-                <div class="logo">AutoDrive</div>
-                <h2>Bienvenido</h2>
-                <form>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Contraseña" required>
-                    <div class="options">
-                        <label><input type="checkbox">Recordarme</label>
-                    </div>
-                    <button type="submit">Ingresar</button>
-                </form>
-            </div>
-    </main>
+            </a>
+            <form action="resultadosBusqueda.html" method="get"> 
+                <input id="buscar_input" type="text" name="busqueda" placeholder="  Buscar..." value="">
+                <button id="buscar_boton">Buscar</button>
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainLogin">
+                <div class="divlog2">
+                    <div class="logo">AutoDrive</div>
+                    <h2>Bienvenido</h2>
+                    <form>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Contraseña" required>
+                        <div class="options">
+                            <label><input type="checkbox">Recordarme</label>
+                        </div>
+                        <button type="submit">Ingresar</button>
+                    </form>
+                </div>
+        </main>
+        <footer>
+            <p>Desarrollado por: Amalvy, Barbero y Damelio</p>
+        </footer>
     </body>
 </html>

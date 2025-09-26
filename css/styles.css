@@ -24,6 +24,10 @@ a{
     text-decoration: none;
 }
 
+li{
+    list-style: none;
+}
+
 header{
     background-color: #1E1E1E;
     display: flex;
@@ -37,10 +41,6 @@ header{
             flex-wrap: wrap;
             align-items: center;
             gap: 10px;
-        }
-
-        header a div{
-
         }
         
         header a h1{
@@ -106,13 +106,14 @@ header{
     background-color: #121212;
     display: flex;
     justify-content: space-between;
+
 }
 
 .barra-lateral{
     background-color: #1E1E1E;
     display: flex;
     flex-direction: column;
-    width: 350px;
+    min-width: 220px;
     padding: 15px;
     color: #ffffff;
     gap: 20px;
@@ -202,7 +203,7 @@ footer{
 
 
 .bodyLogin{
-    background-image: url("../materiales/imagenes/fodo.jpg");
+    background-image: url("../img/imglog-reg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
         }
@@ -310,3 +311,174 @@ footer{
 
 
 
+/* DETALLE DEL PRODUCTO*/
+
+
+
+.imagen{
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.main-index2{
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.barra-lateral2{
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding: 15px;
+    color: #ffffff;
+    gap: 20px;
+}
+    .barra-lateral2 ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1.2vw;
+    }
+    .barra-lateral2 a{
+        color: #ffffff;
+    }
+    
+    .barra-lateral2 h2{
+        color: #E63946;
+        font-size: 2vw;
+    }
+
+.principal2{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 100%
+
+}
+    .principal2 h1{
+        color: #ffffff;
+    }
+    .principal2 article p{
+        color: white;
+        width: 100%;
+    }
+
+.tags{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+    .tags ol{
+        display: flex;
+        width: 23%;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+    }
+    .tags ol li{
+        color: #ffffff;
+        display: flex;
+        background-color: #E63946;
+        padding: 5px;
+        border-radius: 7px;
+        align-items: center;
+        height: 100%;
+    }
+
+    .tags div{
+        display: flex;
+        justify-content: flex-end;
+        background-color: #E63946;
+        color: #ffffff;
+        padding: 3px 7px;
+        border-radius: 7px;
+        height: 100%;
+        align-items: center;
+    }
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+}
+
+    .stats article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-color: #2E2E2E;
+        border-radius: 30px;
+    }
+        .stats article img{
+            width: 60%;
+        }
+        .stats article p{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+.reseñas{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+    .reseñas article{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #2E2E2E;
+        width: 47%;
+        padding: 25px;
+        border-radius: 30px;
+    }
+
+        .reseñas article img{
+            width: 30%;
+        }
+
+        .usuario{
+            font-size: 30px;
+        }
+
+@media (max-width: 768px) {
+    
+    header a {
+        width: 25%;
+    }
+    header a h1{
+        font-size: 20px;
+        width: auto;
+    }
+    header form{
+        width: 30%;
+    }
+    header nav{
+        width: 23%;
+    }
+
+    .barra-lateral{
+        min-width: 160px;
+    }
+
+    .container article{
+        width: 550px;
+    }
+        .container article img{
+            height: auto;
+        }
+    footer p{
+        margin: 0px 32%;
+    }
+}
