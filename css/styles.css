@@ -286,6 +286,20 @@ footer{
             #condiciones{
                 width: 15%;
             }
+.footer-login{
+    padding: 10px;
+    background-color: #E63946;
+    color: #ffffff;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+    .footer-login p{
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2vw;
+    }
 
 
 
