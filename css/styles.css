@@ -42,10 +42,6 @@ header{
             align-items: center;
             gap: 10px;
         }
-
-        header a div{
-
-        }
         
         header a h1{
             color: #E63946;
@@ -408,7 +404,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
+    margin: 100px 0;
 }
 
     .stats article{
@@ -428,4 +424,30 @@ footer{
             display: flex;
             justify-content: center;
             margin-top: 15px;
+        }
+
+.reseñas{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+    .reseñas article{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #2E2E2E;
+        width: 47%;
+        padding: 25px;
+        border-radius: 30px;
+    }
+
+        .reseñas article img{
+            width: 30%;
+        }
+
+        .usuario{
+            font-size: 30px;
         }
