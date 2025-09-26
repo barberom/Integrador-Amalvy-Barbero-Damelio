@@ -478,5 +478,7 @@ footer{
         .container article img{
             height: auto;
         }
-    
+    footer p{
+        margin: 0px 32%;
+    }
 }
