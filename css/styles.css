@@ -16,22 +16,41 @@
     font-family: "Roboto", sans-serif;
 }
 
+h1{
+    font-family: "Oswald", sans-serif;
+}
+
 a{
     text-decoration: none;
 }
 
+li{
+    list-style: none;
+}
+
 header{
-    background-color: #2E2E2E;
+    background-color: #1E1E1E;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 2%;
 }
+    header a {
+            width: 20%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        header a h1{
+            color: #E63946;
+            width: 50%;
+        }
 
-    header img{
-        width: 16%;
-        height: 100%;
-    }
+        header a img{
+            width: 40%;
+        }
 
     header form{
         display: flex;
@@ -55,11 +74,13 @@ header{
             color: #ffffff;
             width: 25%;
             padding: 5px;
+            font-size: 1.2vw;
         }
+
 
     header nav{
         width: 100%;
-        max-width: 16%;
+        max-width: 200px;
     }
 
         header nav ul{
@@ -72,75 +93,361 @@ header{
 
         header nav ul li a{
             color: white;
-        }     
-        .body2{
-    background-image: url("../materiales/imagenes/bmw-m2-nfs-raining-4k-ww.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-        }
-
-.mainLogin {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    margin: 100px 0px;
- 
-
-}
-
-.divlog2{
-    background: rgba(0, 0, 0, 0.8); 
-    padding: 40px;
-    border-radius: 15px;
-    width: 350px;
-    text-align: center;
-    color: white;
-    
-}
-
-
- .divlog2 .logo{
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #E63946; 
-    letter-spacing: 2px;
-    font-family: "Oswald", sans-serif;
-}
-
-
-.divlog2 input[type="email"],
-.divlog2 input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-   
-    border-radius: 8px;
-    font-size: 14px;
-}
-
-
-.divlog2 button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 15px;
-    border: none;
-    border-radius: 8px;
-    background-color: #E63946;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
+        } 
 
 
 
 
-.divlog2 .options {
+
+        
+/*INDEX*/
+
+.main-index{
+    background-color: #121212;
     display: flex;
     justify-content: space-between;
+}
+
+.barra-lateral{
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 15px;
+    color: #ffffff;
+    gap: 20px;
+}
+    .barra-lateral ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .barra-lateral a{
+        color: #ffffff;
+    }
+    
+    .barra-lateral h2{
+        color: #E63946;
+    }
+
+.principal{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+
+}
+    .principal h1{
+        color: #ffffff;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 15px;
+    
+    }
+        .container article{
+            background-color: #2E2E2E;
+            color: #ffffff;
+            margin: 15px 0px;
+            width: 360px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+            font-family: "Roboto", sans-serif;
+            padding-bottom: 15px;
+        }
+            .container article img{
+                height: 270px;
+                width: 100%;
+            }
+            .container article div{
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 15px;
+            }
+                .container article div button{
+                    color: #ffffff;
+                    background-color: #E63946;
+                    align-self: flex-start;
+                    width: 75px;
+                    height: 30px;
+                    border: 0px;
+                }
+
+footer{
+    padding: 10px;
+    background-color: #E63946;
+    color: #ffffff;
     align-items: center;
-    font-size: 14px;
+}
+    footer p{
+        font-family: "Roboto", sans-serif;
+        margin: 0px 40%;
+        width: 50%;
+    }
+
+
+
+
+
+/*LOGIN*/
+
+
+
+.bodyLogin{
+    background-image: url("../materiales/imagenes/fodo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
+
+    .mainLogin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        margin: 100px 0px;
+    
+
+    }
+
+        .divlog2{
+            background: rgba(0, 0, 0, 0.8); 
+            padding: 40px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+            color: white;
+            
+        }
+
+            .divlog2 .logo{
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: #E63946; 
+                letter-spacing: 2px;
+                font-family: "Oswald", sans-serif;
+            }
+
+            .divlog2 input{
+                width: 100%;
+                padding: 12px;
+                margin: 10px 0;
+            
+                border-radius: 8px;
+                font-size: 14px;
+            }
+
+            .divlog2 button {
+                width: 100%;
+                padding: 12px;
+                margin-top: 15px;
+                border: none;
+                border-radius: 8px;
+                background-color: #E63946;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .options {
+                display: flex;
+                font-size: 14px;
+                margin-top: 10px;
+                justify-content: flex-start;
+                width: 100%;
+            }
+
+            .options label{
+                display: flex;
+                align-items: center;
+                gap: 2px;
+            }
+
+            .terminos{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                font-size: 14px;
+            }
+
+            #condiciones{
+                width: 15%;
+            }
+
+
+
+
+
+
+
+/*REGISTER*/
+
+#ya_tengo{
     margin-top: 10px;
 }
+
+#tengo{
+    text-decoration: underline;
+    color: #E63946;
+}
+
+.divlog2 h1{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* DETALLE DEL PRODUCTO*/
+
+
+
+.imagen{
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.main-index2{
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: red 2px solid;
+}
+
+.barra-lateral2{
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding: 15px;
+    color: #ffffff;
+    gap: 20px;
+}
+    .barra-lateral2 ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1.2vw;
+    }
+    .barra-lateral2 a{
+        color: #ffffff;
+    }
+    
+    .barra-lateral2 h2{
+        color: #E63946;
+        font-size: 2vw;
+    }
+
+.principal2{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 100%
+
+}
+    .principal2 h1{
+        color: #ffffff;
+    }
+    .principal2 article p{
+        color: white;
+        width: 100%;
+    }
+
+.tags{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+    .tags ol{
+        display: flex;
+        width: 23%;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+    }
+    .tags ol li{
+        color: #ffffff;
+        display: flex;
+        background-color: #E63946;
+        padding: 5px;
+        border-radius: 7px;
+        align-items: center;
+        height: 100%;
+    }
+
+    .tags div{
+        display: flex;
+        justify-content: flex-end;
+        background-color: #E63946;
+        color: #ffffff;
+        padding: 3px 7px;
+        border-radius: 7px;
+        height: 100%;
+        align-items: center;
+    }
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+}
+
+    .stats article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-color: #2E2E2E;
+        border-radius: 30px;
+    }
+        .stats article img{
+            width: 60%;
+        }
+        .stats article p{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+.reseñas{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+    .reseñas article{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #2E2E2E;
+        width: 47%;
+        padding: 25px;
+        border-radius: 30px;
+    }
+
+        .reseñas article img{
+            width: 30%;
+        }
+
+        .usuario{
+            font-size: 30px;
+        }
