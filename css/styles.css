@@ -484,10 +484,10 @@ footer{
         width: 20%;
     }
         header form input{
-            height: 4vw;
+            height: 3vw;
         }
         header form button{
-            height: 4vw;
+            height: 3vw;
         }
     header nav{
         width: 23%;
@@ -568,6 +568,63 @@ footer{
         } 
 }
 
-@media (max-width: 320px) {
-    
+
+@media (max-width: 320px){
+    header{
+        
+    }
+        header a{
+            width: 20%;
+        }
+        header a img{
+            width: 80%;
+        }
+        header a h1{
+            display: none;
+            
+        }
+        header form{
+            width: 30%;
+        }
+        header form input{
+            font-size: 7px;
+            height: 10px;
+        }
+        header form button{
+            font-size: 5px;
+            height: 10px;
+        }
+        header nav{
+            width: 25%;
+        }
+        header li a{
+            font-size: 10px;
+        }
+        #li-home{
+            display: none;
+        }
+    .main-index{
+        flex-direction: column;
+    }
+    .barra-lateral{
+       width: 100%;
+    }
+    .barra-lateral h2{
+        display: none;
+    }
+    .barra-lateral li{
+        font-size: 10px;
+    }
+
+    .container{
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+
+    footer p{
+        font-size: 10px;
+    }
+    .footer-login p{
+        font-size: 10px;
+    }
 }
