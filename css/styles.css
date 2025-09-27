@@ -535,7 +535,7 @@ footer{
         }
     .stats{
     margin: 30px 0;
-}
+    }
 
     .stats article{
         width: 30%;
@@ -562,10 +562,6 @@ footer{
             .reseñas article img{
                 width: 40%;
             }
-
-        .usuario{
-            font-size: 510px;
-        } 
 }
 
 
@@ -595,7 +591,7 @@ footer{
             width: 25%;
         }
         header li a{
-            font-size: 10px;
+            font-size: 3vw;
         }
         #li-home{
             display: none;
@@ -610,13 +606,26 @@ footer{
         display: none;
     }
     .barra-lateral li{
-        font-size: 10px;
+        font-size: 6vw;
     }
-
+    .barra-lateral ul{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
     .container{
-        padding-left: 30px;
+        padding-left: 10px;
         padding-top: 10px;
     }
+        .container article{
+            width: 80%;
+        }
+            .container article h3{
+                font-size: 15px;
+            }
+            .container article a button{
+                width: 40%;
+                font-size: 3vw;
+            }
 
     footer p{
         font-size: 10px;
@@ -624,4 +633,67 @@ footer{
     .footer-login p{
         font-size: 10px;
     }
-}
+    .main-index2{
+    flex-direction: column;
+    }
+    .barra-lateral2{
+    width: 100%;
+    }
+        .barra-lateral2 ul{
+            flex-direction: row;
+            font-size: 10px;
+            flex-wrap: wrap;
+        }
+        .barra-lateral2 h2{
+            display: none;
+        }
+        .barra-lateral2 li{
+            font-size: 4vw;
+        }
+    .tags{
+        flex-wrap: wrap;
+    }
+        .tags ol{
+            width: 50%;
+            margin-right: 0;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+            .tags ol li{
+                font-size: 6px;
+            }
+            .tags div p{
+                font-size: 6px;
+                padding: 2px;
+    
+            }
+        .tags div{
+            height: 100%;
+        }
+    .reseñas article p{
+        font-size: 2.5vw;
+    }
+    .principal2 h1{
+        font-size: 20vw;
+    }
+    .principal2 article p{
+        font-size: 7px;
+    }
+    .stats{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+        .stats article{
+            width: 50px;
+            margin-top: 10px;
+            height: 100px;
+        }
+            .stats article p{
+                margin-top: 10px;
+                font-size: 3vw;
+            }
+    .principal h1{
+        font-size: 10vw;
+    }
+    
+}   
