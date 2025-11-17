@@ -34,18 +34,18 @@
             <div class="divlog2">
                 <div class="logo">AutoDrive</div>
                 <h2>Registrate</h2>
-                <form action="register.html" method="get">
+                <form class="formRegister" action="login.html" method="get">
                     <article class="email"> <p class="text1"></p><!--EMAIL-->
                         <label for="email"></label>
-                        <input type="email" name="email" value="" placeholder="Ingrese su email" required>
+                        <input id="mail_reg" type="email" name="email" value="" placeholder="Ingrese su email">
                     </article>
                     <article class="password"> <p class="text1"></p><!--CONTRASEÑA-->
                         <label for="contraseña"></label>
-                        <input type="password" name="contraseña" value="" placeholder="Ingrese su contraseña">
+                        <input id="pass_reg" type="password" name="contraseña" value="" placeholder="Ingrese su contraseña">
                     </article>
                     <article class="password"> <p class="text1"></p><!--REPETIR CONTRASEÑA-->
                         <label for="contraseña"></label>
-                        <input id="contraseña" type="password" name="contraseña" value="" placeholder="Repita su contraseña">
+                        <input id="repeat_reg" type="password" name="contraseña" value="" placeholder="Repita su contraseña">
                     </article>
                     <article class="options">
                         <label class="terminos" for="terminos"> <!--TÉRMINOS-->
@@ -64,5 +64,6 @@
             <p>Desarrollado por: Amalvy, Barbero y Damelio</p>
         </footer>
         <script src="./js/index.js"></script>
+        <script src="./js/register.js"></script>
     </body>
 </html>
