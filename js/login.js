@@ -2,15 +2,23 @@ let formLogin = document.querySelector('.formLogin')
 let mail_log = document.querySelector('#mail_log')
 let pass_log = document.querySelector('#pass_log')
 
+// Errores
+
+let mailError = document.querySelector('.invalid_mail')
+let passError = document.querySelector('.invalid_pass')
+let repeatError = document.querySelector('.invalid_repeat')
+
 formLogin.addEventListener('submit',function(event){
     event.preventDefault()
     if(mail_log.value == ''){
-        alert('el mail no puede estar vacio')
+        mailError.innerHTML = "<p>El mail no puede quedar vacío.</p>"
     }
-    else if(pass_log.value == '')
-        alert('la contraseña no puede estar vacia')
+    else if(pass_log.value == ''){
+        passError.innerHTML = "<p>La contraseña no puede estar vacía.</p>"
+        mailError.style.display = 'none'
+    }
     else if((pass_log.value).length < 6){
-        alert('La contraseña debe tener al menos 6 caracteres')
+        repeatError.innerHTML = "<p>La contraseña debe tener al menos 6 caracteres.</p>"
     }
     else{
         this.submit()

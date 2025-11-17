@@ -475,6 +475,29 @@ footer{
             font-size: 30px;
         }
 
+/* REGISTER JS */
+
+.invalid_mail{
+    color: #E63946;
+    display: flex;
+    justify-content: flex-start;
+}
+.invalid_pass{
+    color: #E63946;
+    display: flex;
+    justify-content: flex-start;
+}
+.invalid_repeat{
+    color: #E63946;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
     
     header a {
