@@ -14,13 +14,17 @@ formRegister.addEventListener('submit',function(event){
     if(mail_reg.value == ''){
         mailError.innerHTML = "<p>El mail no puede quedar vacío.</p>"
     }
-    else if(pass_reg.value == '')
+    else if(pass_reg.value == ''){
         passError.innerHTML = "<p>La contraseña no puede estar vacía.</p>"
+        mailError.style.display = 'none'
+    }
     else if((pass_reg.value).length < 6){
-        repeatError.innerHTML = "<p>La contraseña debe tener al menos 6 caracteres.</p>"
+        passError.innerHTML = "<p>La contraseña debe tener al menos 6 caracteres.</p>"
+        passError.style.display = 'none'
     }
     else if (pass_reg.value !== repeat_reg.value){
         repeatError.innerHTML = "<p>Las contraseñas no coinciden.</p>"
+        passError.style.display = 'none'
     }
     else{
         this.submit()

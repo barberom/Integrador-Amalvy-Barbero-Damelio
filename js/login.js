@@ -15,6 +15,7 @@ formLogin.addEventListener('submit',function(event){
     }
     else if(pass_log.value == ''){
         passError.innerHTML = "<p>La contraseña no puede estar vacía.</p>"
+        mailError.style.display = 'none'
     }
     else if((pass_log.value).length < 6){
         repeatError.innerHTML = "<p>La contraseña debe tener al menos 6 caracteres.</p>"
