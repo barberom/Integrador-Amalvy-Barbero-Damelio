@@ -263,10 +263,12 @@ footer{
 
             .options {
                 display: flex;
+                flex-direction: column;
+                align-items:flex-start;
                 font-size: 14px;
                 margin-top: 10px;
-                justify-content: flex-start;
                 width: 100%;
+                padding-left: 2%;
             }
 
             .options label{
@@ -300,6 +302,11 @@ footer{
         font-family: "Roboto", sans-serif;
         font-size: 1.2vw;
     }
+
+            .formLogin a{
+                color: #E63946;
+                text-decoration: underline;
+            }
 
 
 
@@ -467,6 +474,29 @@ footer{
         .usuario{
             font-size: 30px;
         }
+
+/* REGISTER JS */
+
+.invalid_mail{
+    color: #E63946;
+    display: flex;
+    justify-content: flex-start;
+}
+.invalid_pass{
+    color: #E63946;
+    display: flex;
+    justify-content: flex-start;
+}
+.invalid_repeat{
+    color: #E63946;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+
+
 
 @media (max-width: 768px) {
     

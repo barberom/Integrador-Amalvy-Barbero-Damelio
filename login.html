@@ -18,9 +18,9 @@
                     <h1>AutoDrive</h1>
 
             </a>
-            <form action="resultadosBusqueda.html" method="get"> 
+            <form class="barra_busqueda" action="resultadosBusqueda.html" method="get"> 
                 <input id="buscar_input" type="text" name="busqueda" placeholder="  Buscar..." value="">
-                <button id="buscar_boton">Buscar</button>
+                <button id="buscar_boton"><p>Buscar</p></button>
             </form>
             <nav>
                 <ul>
@@ -34,11 +34,14 @@
                 <div class="divlog2">
                     <div class="logo">AutoDrive</div>
                     <h2>Bienvenido</h2>
-                    <form>
-                        <input type="email" placeholder="Email" required>
-                        <input type="password" placeholder="Contraseña" required>
+                    <form class="formLogin" action="./index.html">
+                        <input id="mail_log" type="email" placeholder="Email" >
+                        <div class="invalid_mail"></div>
+                        <input id="pass_log" type="password" placeholder="Contraseña">
+                        <div class="invalid_pass"></div>
                         <div class="options">
                             <label><input type="checkbox">Recordarme</label>
+                            <a href="./registro.html">No tengo cuenta</a>
                         </div>
                         <button type="submit">Ingresar</button>
                     </form>
@@ -48,4 +51,6 @@
             <p>Desarrollado por: Amalvy, Barbero y Damelio</p>
         </footer>
     </body>
+    <script src="./js/login.js"></script>
+    <script></script>
 </html>
