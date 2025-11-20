@@ -46,6 +46,7 @@ fetch('https://dummyjson.com/products/category/vehicle')
     return response.json()
 })
 .then(function(data){
+    console.log(data)
     let otros_productos = document.querySelector('#otros_productos')
     let varios = ''
     for(let i = 0; i < data.products.length; i++){
@@ -64,3 +65,19 @@ fetch('https://dummyjson.com/products/category/vehicle')
     console.log(error)})
 
 
+fetch('https://dummyjson.com/products/categories')
+.then(function(response){
+    return response.json()
+})
+.then(function(data){
+    console.log(data)
+    
+    let suv = document.querySelector('#categoria_suv')
+    suv.innerHTML = `<a href="product.html?categoryId=${data.products[i].id}"> <button>Ver detalle</button> </a>`
+    let deportivos = document.querySelector('#categoria_deportivos')
+
+    let motos = document.querySelector('#categoria_motos')
+
+})
+.catch(function(error){
+    console.log(error)})
