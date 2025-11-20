@@ -4,12 +4,14 @@ let queryStringObj = new URLSearchParams(queryString)
 let categoriaId = queryStringObj.get('categoryId');
 
 
-fetch(`'https://dummyjson.com/products/category/${categoriaId}'`)
+fetch(`https://dummyjson.com/products/category/${categoriaId}`)
 	.then(function(response){
 		return response.json();
 	})
 	.then(function(data){
 		console.log(data)
+		let titulo = document.querySelector('#category_titulo')
+		titulo.innerText = `${categoriaId}`
         let productos = document.querySelector('#productos')
 		let categoria_productos = ''
 		for(let i = 0; i < data.products.length; i++){
