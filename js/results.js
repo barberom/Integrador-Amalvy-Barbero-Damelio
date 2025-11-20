@@ -33,3 +33,33 @@ fetch(`https://dummyjson.com/products/search?q=${busqueda}`)
     .catch(function(error){
     console.log(error)
 })
+
+
+
+
+
+
+
+// Misma Api que en index y category.js
+
+
+fetch('https://dummyjson.com/products/category-list')
+	.then(function(response){
+		return response.json()
+	})
+	.then(function(data){
+		console.log(data)
+		
+		let suv = document.querySelector('#categoria_suv')
+		suv.innerHTML = `<a href="category.html?categoryId=${data[6]}">Tecnología</a>`
+		console.log(suv)
+		let vehiculos = document.querySelector('#categoria_deportivos')
+		vehiculos.innerHTML = `<a href="category.html?categoryId=${data[18]}">Vehículos</a>`
+		console.log(vehiculos)
+		let moto = document.querySelector('#categoria_motos')
+		moto.innerHTML = `<a href="category.html?categoryId=${data[11]}">Motos</a>`
+		console.log(moto)
+
+	})
+	.catch(function(error){
+		console.log(error)})
