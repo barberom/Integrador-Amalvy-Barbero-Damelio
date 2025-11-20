@@ -105,8 +105,6 @@ header{
 .main-index{
     background-color: #121212;
     display: flex;
-    justify-content: space-between;
-
 }
 
 .barra-lateral{
