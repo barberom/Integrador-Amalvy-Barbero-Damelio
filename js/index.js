@@ -65,7 +65,7 @@ fetch('https://dummyjson.com/products/category/vehicle')
     console.log(error)})
 
 
-fetch('https://dummyjson.com/products/categories')
+fetch('https://dummyjson.com/products/category-list')
 .then(function(response){
     return response.json()
 })
@@ -73,10 +73,14 @@ fetch('https://dummyjson.com/products/categories')
     console.log(data)
     
     let suv = document.querySelector('#categoria_suv')
-    suv.innerHTML = `<a href="product.html?categoryId=${data.products[i].id}"> <button>Ver detalle</button> </a>`
-    let deportivos = document.querySelector('#categoria_deportivos')
-
-    let motos = document.querySelector('#categoria_motos')
+    suv.innerHTML = `<a href="category.html?categoryId=${data[6]}">Tecnología</a>`
+    console.log(suv)
+    let vehiculos = document.querySelector('#categoria_deportivos')
+    vehiculos.innerHTML = `<a href="category.html?categoryId=${data[18]}">Vehículos</a>`
+    console.log(vehiculos)
+    let moto = document.querySelector('#categoria_motos')
+    moto.innerHTML = `<a href="category.html?categoryId=${data[11]}">Motos</a>`
+    console.log(moto)
 
 })
 .catch(function(error){
