@@ -31,7 +31,7 @@ fetch('https://dummyjson.com/products/category/motorcycle')
                                         <div>
                                             <h3>${data.products[i].title}</h3>
                                             <p> ${data.products[i].description}</p> 
-                                            <a href="product.html"> <button>Ver detalle</button> </a>
+                                            <a href="product.html?id=${data.products[i].id}"> <button>Ver detalle</button> </a>
                                         </div>
                                     </article>`
     }
@@ -54,7 +54,7 @@ fetch('https://dummyjson.com/products/category/vehicle')
                                         <div>
                                             <h3>${data.products[i].title}</h3>
                                             <p> ${data.products[i].description}</p> 
-                                            <a href="product.html"> <button>Ver detalle</button> </a>
+                                            <a href="product.html?id=${data.products[i].id}"> <button>Ver detalle</button> </a>
                                         </div>
                                     </article>`
     }
