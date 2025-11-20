@@ -19,7 +19,7 @@ fetch(`https://dummyjson.com/products/search?q=${busqueda}`)
                                 <div>
                                     <h3>${data.products[i].title}</h3>
                                     <p> ${data.products[i].description}</p> 
-                                    <a href="product.html"> <button>Ver detalle</button> </a>
+                                    <a href="product.html?id=${data.products[i].id}"> <button>Ver detalle</button> </a>
                                 </div>
                             </article>`
         }
@@ -63,3 +63,26 @@ fetch('https://dummyjson.com/products/category-list')
 	})
 	.catch(function(error){
 		console.log(error)})
+
+
+
+
+
+
+// Barra de búsqueda limitada 
+
+let formBusqueda = document.querySelector('.barra_busqueda')
+let busqueda_result = document.querySelector('#buscar_input')
+
+formBusqueda.addEventListener('submit',function(event){
+    event.preventDefault()
+    if (busqueda_result.value == ''){
+        alert("La busqueda no puede estar vacia")
+    }
+    else if ((busqueda.value).length < 3){
+        alert('La busqueda debe ser mayor a 3 caracteres')
+    }
+    else{
+        this.submit()
+    }
+})

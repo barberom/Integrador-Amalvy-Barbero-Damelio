@@ -97,3 +97,22 @@ fetch(`https://dummyjson.com/products/${idVehiculo}`)
 	})
 	.catch(function(error){
 		console.log(error)})
+
+
+// Barra búsqueda Limitada
+
+let formBusqueda = document.querySelector('.barra_busqueda')
+let busqueda_result = document.querySelector('#buscar_input')
+
+formBusqueda.addEventListener('submit',function(event){
+    event.preventDefault()
+    if (busqueda_result.value == ''){
+        alert("La busqueda no puede estar vacia")
+    }
+    else if ((busqueda_result.value).length < 3){
+        alert('La busqueda debe ser mayor a 3 caracteres')
+    }
+    else{
+        this.submit()
+    }
+})
