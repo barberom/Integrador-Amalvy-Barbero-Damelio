@@ -10,6 +10,10 @@ let repeatError = document.querySelector('.invalid_repeat')
 
 formLogin.addEventListener('submit',function(event){
     event.preventDefault()
+    mailError.innerHTML = ""
+    passError.innerHTML = ""
+    repeatError.innerHTML = ""
+
     if(mail_log.value == ''){
         mailError.innerHTML = "<p>El mail no puede quedar vacío.</p>"
     }
@@ -18,13 +22,14 @@ formLogin.addEventListener('submit',function(event){
         mailError.style.display = 'none'
     }
     else if((pass_log.value).length < 6){
-        repeatError.innerHTML = "<p>La contraseña debe tener al menos 6 caracteres.</p>"
+        passError.innerHTML = "<p>La contraseña debe tener al menos 6 caracteres.</p>"
     }
     else{
         this.submit()
         localStorage.clear()
-        localStorage.setItem(usuario, mail_log.value) // no se si funciona
-        localStorage.setItem(password, pass_log.value)
+        localStorage.setItem("usuario", mail_log.value)
+        localStorage.setItem("password", pass_log.value)
+        this.submit()
         console.log(localStorage)
     }
 }) 
