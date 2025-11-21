@@ -26,7 +26,7 @@ formLogin.addEventListener('submit',function(event){
     }
     else{
         this.submit()
-        localStorage.clear()
+
         localStorage.setItem("usuario", mail_log.value)
         localStorage.setItem("password", pass_log.value)
         this.submit()
