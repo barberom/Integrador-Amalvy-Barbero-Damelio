@@ -23,7 +23,7 @@ fetch(`https://dummyjson.com/products/${idVehiculo}`)
         categoria_foto.src = data.images[2]
 
         let categoria = document.querySelector('#product_categoria');
-        categoria.innerHTML = `<a href="product.html?category=${data.category}">${data.category}</a>`
+        categoria.innerHTML = `<a href="category.html?categoryId=${data.category}">${data.category}</a>`
 
         let tags = document.querySelector('#product_tags');
         tags.innerText = data.tags
@@ -73,3 +73,46 @@ fetch(`https://dummyjson.com/products/${idVehiculo}`)
 	.catch(function(error){
 		console.log(error)
 	})
+
+
+
+
+    fetch('https://dummyjson.com/products/category-list')
+	.then(function(response){
+		return response.json()
+	})
+	.then(function(data){
+		console.log(data)
+		
+		let suv = document.querySelector('#categoria_suv')
+		suv.innerHTML = `<a href="category.html?categoryId=${data[6]}">Tecnología</a>`
+		console.log(suv)
+		let vehiculos = document.querySelector('#categoria_deportivos')
+		vehiculos.innerHTML = `<a href="category.html?categoryId=${data[18]}">Vehículos</a>`
+		console.log(vehiculos)
+		let moto = document.querySelector('#categoria_motos')
+		moto.innerHTML = `<a href="category.html?categoryId=${data[11]}">Motos</a>`
+		console.log(moto)
+
+	})
+	.catch(function(error){
+		console.log(error)})
+
+
+// Barra búsqueda Limitada
+
+let formBusqueda = document.querySelector('.barra_busqueda')
+let busqueda_result = document.querySelector('#buscar_input')
+
+formBusqueda.addEventListener('submit',function(event){
+    event.preventDefault()
+    if (busqueda_result.value == ''){
+        alert("La busqueda no puede estar vacia")
+    }
+    else if ((busqueda_result.value).length < 3){
+        alert('La busqueda debe ser mayor a 3 caracteres')
+    }
+    else{
+        this.submit()
+    }
+})
