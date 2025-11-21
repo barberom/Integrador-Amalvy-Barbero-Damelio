@@ -10,6 +10,8 @@ let passError = document.querySelector('.invalid_pass')
 let repeatError = document.querySelector('.invalid_repeat')
 
 formRegister.addEventListener('submit',function(event){
+    console.log("a");
+    
     event.preventDefault()
     if(mail_reg.value == ''){
         mailError.innerHTML = "<p>El mail no puede quedar vacío.</p>"
@@ -40,15 +42,15 @@ formRegister.addEventListener('submit',function(event){
 
 
 
-let formBusqueda = document.querySelector('.barra_busqueda')
-let busqueda = document.querySelector('#buscar_input')
+let formBusqueda2 = document.querySelector('.barra_busqueda')
+let busqueda2 = document.querySelector('#buscar_input')
 
-formBusqueda.addEventListener('submit',function(event){
+formBusqueda2.addEventListener('submit',function(event){
     event.preventDefault()
-    if (busqueda.value == ''){
+    if (busqueda2.value == ''){
         alert("La busqueda no puede estar vacia")
     }
-    else if ((busqueda.value).length < 3){
+    else if ((busqueda2.value).length < 3){
         alert('La busqueda debe ser mayor a 3 caracteres')
     }
     else{
