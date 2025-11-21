@@ -3,6 +3,25 @@ let queryStringObj = new URLSearchParams(queryString)
 let busqueda = queryStringObj.get('busqueda')
 
 
+// Barra de búsqueda limitada 
+
+let formBusqueda = document.querySelector('.barra_busqueda')
+let busqueda_result = document.querySelector('#buscar_input')
+
+formBusqueda.addEventListener('submit',function(event){
+    event.preventDefault()
+    if (busqueda_result.value == ''){
+        alert("La busqueda no puede estar vacia")
+    }
+    else if ((busqueda_result.value).length < 3){
+        alert('La busqueda debe ser mayor a 3 caracteres')
+    }
+    else{
+        this.submit()
+    }
+})
+
+
 fetch(`https://dummyjson.com/products/search?q=${busqueda}`)
 .then(function(response){
     return response.json()
@@ -11,7 +30,7 @@ fetch(`https://dummyjson.com/products/search?q=${busqueda}`)
     let container_busqueda = document.querySelector('.container_busqueda')
     let art_busqueda = ''
     let titulo_busqueda = document.querySelector('#titulo_busqueda')
-    if(data.products.length > 1){
+    if(data.products.length > 0){
         titulo_busqueda.innerText = `Resultados de la busqueda: ${busqueda}`
         for(let i = 0; i < data.products.length; i++){
             art_busqueda += `<article>
@@ -69,20 +88,3 @@ fetch('https://dummyjson.com/products/category-list')
 
 
 
-// Barra de búsqueda limitada 
-
-let formBusqueda = document.querySelector('.barra_busqueda')
-let busqueda_result = document.querySelector('#buscar_input')
-
-formBusqueda.addEventListener('submit',function(event){
-    event.preventDefault()
-    if (busqueda_result.value == ''){
-        alert("La busqueda no puede estar vacia")
-    }
-    else if ((busqueda.value).length < 3){
-        alert('La busqueda debe ser mayor a 3 caracteres')
-    }
-    else{
-        this.submit()
-    }
-})

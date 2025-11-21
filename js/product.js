@@ -23,7 +23,7 @@ fetch(`https://dummyjson.com/products/${idVehiculo}`)
         categoria_foto.src = data.images[2]
 
         let categoria = document.querySelector('#product_categoria');
-        categoria.innerHTML = `<a href="product.html?category=${data.category}">${data.category}</a>`
+        categoria.innerHTML = `<a href="category.html?categoryId=${data.category}">${data.category}</a>`
 
         let tags = document.querySelector('#product_tags');
         tags.innerText = data.tags
