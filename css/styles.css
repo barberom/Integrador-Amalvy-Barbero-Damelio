@@ -95,7 +95,22 @@ header{
             color: white;
         } 
 
+        header nav ul li p{
+            color: white;
+        }
 
+    .saludo{
+        display: none;
+        color: #ffffff;
+        font-size: 1.8vw;
+    }
+    .saludo span{
+        color: #E63946;
+    }
+    
+    .li-logout{
+        display: none;
+    }
 
 
 
@@ -472,6 +487,7 @@ a{
     .usuario{
         font-size: 30px;
     }
+
 
 @media (max-width: 768px) {
     

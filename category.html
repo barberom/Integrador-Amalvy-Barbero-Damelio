@@ -20,13 +20,15 @@
             </a>
             <form class="barra_busqueda" action="resultadosBusqueda.html" method="get"> 
                 <input id="buscar_input" type="text" name="busqueda" placeholder="  Buscar..." value="">
-                <button id="buscar_boton"><p>Buscar</p></button>
+                <button id="buscar_boton">Buscar</button>
             </form>
-            <nav>
+            <h3 class="saludo"> Bienvenido </h3>
+            <nav class="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="registro.html">Registro</a></li>
+                    <li class="li-home"><a href="index.html">Home</a></li>
+                    <li class="li-login"><a href="login.html">Login</a></li>
+                    <li class="li-register"><a href="register.html">Registro</a></li>
+                    <li class="li-logout"> <a class="link-logout">Log out</a> </li>
                 </ul>
             </nav>
         </header>
@@ -99,5 +101,6 @@
         </footer>
         <script src="./js/category.js"></script>
         <script src="./js/saludo.js"></script>
+        <script src="./js/logout.js"></script>
     </body>
 </html>
