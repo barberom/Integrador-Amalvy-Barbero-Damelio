@@ -1,7 +1,7 @@
 let usuario = localStorage.getItem("usuario");
 let liLogin = document.querySelector("#li-login");
 let liRegister = document.querySelector("#li-register");
-let liSaludo = document.querySelector("#li-saludo");
+let liSaludo = document.querySelector(".li-saludo");
 let liLogout = document.querySelector("#li-logout");
 
 if (usuario !== null) {
