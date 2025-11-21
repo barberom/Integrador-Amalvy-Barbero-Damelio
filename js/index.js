@@ -30,7 +30,8 @@ fetch('https://dummyjson.com/products/category/motorcycle')
                                         <img src='${data.products[i].images[0]}' alt=${data.products[i].title}>
                                         <div>
                                             <h3>${data.products[i].title}</h3>
-                                            <p> ${data.products[i].description}</p> 
+                                            <p> ${data.products[i].description}</p>
+                                            <h3>$${data.products[i].price}</h3>
                                             <a href="product.html?id=${data.products[i].id}"> <button>Ver detalle</button> </a>
                                         </div>
                                     </article>`
@@ -54,7 +55,8 @@ fetch('https://dummyjson.com/products/category/vehicle')
                                         <img src='${data.products[i].images[1]}' alt=${data.products[i].title}>
                                         <div>
                                             <h3>${data.products[i].title}</h3>
-                                            <p> ${data.products[i].description}</p> 
+                                            <p> ${data.products[i].description}</p>
+                                            <h3> $${data.products[i].price}</h3> 
                                             <a href="product.html?id=${data.products[i].id}"> <button>Ver detalle</button> </a>
                                         </div>
                                     </article>`
