@@ -6,13 +6,11 @@ let pass_log = document.querySelector('#pass_log')
 
 let mailError = document.querySelector('.invalid_mail')
 let passError = document.querySelector('.invalid_pass')
-let repeatError = document.querySelector('.invalid_repeat')
 
 formLogin.addEventListener('submit',function(event){
     event.preventDefault()
     mailError.innerHTML = ""
     passError.innerHTML = ""
-    repeatError.innerHTML = ""
 
     if(mail_log.value == ''){
         mailError.innerHTML = "<p>El mail no puede quedar vacío.</p>"
