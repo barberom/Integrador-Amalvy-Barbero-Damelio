@@ -1,86 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resultados</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+    
+                    <img src="./img/logo2.png">  
+                    <h1>AutoDrive</h1>
 
-</head>
-<body>
-    <header>
-        <a href="index.html">
- 
-                <img src="./img/logo2.png">  
-                <h1>AutoDrive</h1>
-
-        </a>
-        <form action="resultadosBusqueda.html" method="get"> 
-            <input id="buscar_input" type="text" name="busqueda" placeholder="  Buscar..." value="">
-            <button id="buscar_boton"><p>Buscar</p></button>
-        </form>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="registro.html">Registro</a></li>
-            </ul>
-        </nav>
-    </header>
+            </a>
+            <form class="barra_busqueda" action="resultadosBusqueda.html" method="get"> 
+                <input id="buscar_input" type="text" name="busqueda" placeholder="  Buscar..." value="">
+                <button id="buscar_boton">Buscar</button>
+            </form>
+            <nav>
+                <ul>
+                    <li id="li-home"><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Registro</a></li>
+                </ul>
+            </nav>
+        </header>
     <main class="main-index">
         <section class="barra-lateral">
             <h2>Categorías</h2>
             <ul>
-                <li><a href="motos.html">SUV</a></li>
-                <li><a href="motos.html">Deportivos</a></li>
-                <li><a href="motos.html">Motos</a></li>
+                <li id="categoria_suv"><a href="category.html">SUV</a></li>
+                <li id="categoria_deportivos"><a href="category.html">Deportivos</a></li>
+                <li id="categoria_motos"><a href="category.html">Motos</a></li>
             </ul>
         </section>
         <section class="principal">
-            <h1>Resultados de busqueda: "BMW"</h1>
-            <div class="container">
-                <article>
-                    <img src="./img/bmw.jpeg" alt="">
-                    <div>
-                    <h3>BMW 120i</h3>
-                    <p> El hatch más exclusivo de su segmento: diseño deportivo, manejo preciso y toda la herencia de BMW en cada detalle. No es solo un auto, es status y deportividad en un mismo paquete.</p>
-                    <a href="bmw120.html"> <button>Ver detalle</button> </a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./img/bmw x6.jpg" alt="">
-                    <div>
-                    <h3>BMW X6</h3>
-                    <p>El SUV coupé que inventó una categoría. Imponente, lujoso y con un andar que mezcla deportividad con presencia arrolladora: manejarlo es sentirte siempre en primera clase.</p> 
-                    <a href="bmw120.html"> <button>Ver detalle</button> </a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./img/bmw g310r.jpg" alt="">
-                    <div>
-                    <h3>BMW G310R</h3>
-                    <p> La moto ideal para entrar al mundo BMW Motorrad. Ágil, liviana y con diseño premium, perfecta para moverte con estilo por la ciudad sin perder ese ADN deportivo alemán.</p> 
-                    <a href="bmw120.html"> <button>Ver detalle</button> </a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./img/bmw g310r.jpg" alt="">
-                    <div>
-                    <h3>BMW G310R</h3>
-                    <p> La moto ideal para entrar al mundo BMW Motorrad. Ágil, liviana y con diseño premium, perfecta para moverte con estilo por la ciudad sin perder ese ADN deportivo alemán.</p> 
-                    <a href="bmw120.html"> <button>Ver detalle</button> </a>
-                    </div>
-                </article>
-                
+            <h1 id="titulo_busqueda">Resultados de busqueda:</h1>
+            <div class="container container_busqueda">
+
                 
             </div>
 
-        </section>
-    </main>
-    <footer>
-        <p>Desarrollado por: Amalvy, Barbero y Damelio</p>
-    </footer>
-</body>
+            </section>
+        </main>
+        <footer>
+            <p>Desarrollado por: Amalvy, Barbero y Damelio</p>
+        </footer>
+        <script src="./js/results.js"></script>
+    </body>
 </html>

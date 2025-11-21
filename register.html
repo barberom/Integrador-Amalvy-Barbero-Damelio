@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <title>Registro</title>
         <link rel="stylesheet" href="./css/styles.css">
-        <meta name="viewport" content="width=device-wid th, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     </head>
     <body class="bodyLogin">
         <header>
@@ -17,34 +18,37 @@
                     <h1>AutoDrive</h1>
 
             </a>
-            <form action="resultadosBusqueda.html" method="get"> 
+            <form class="barra_busqueda" action="resultadosBusqueda.html" method="get"> 
                 <input id="buscar_input" type="text" name="busqueda" placeholder="  Buscar..." value="">
-                <button id="buscar_boton">Buscar</button>
+                <button id="buscar_boton"><p>Buscar</p></button>
             </form>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li id="li-home"><a href="index.html">Home</a></li>
                     <li><a href="login.html">Login</a></li>
-                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="register.html">Registro</a></li>
                 </ul>
             </nav>
         </header>
         <main class="mainLogin">
             <div class="divlog2">
                 <div class="logo">AutoDrive</div>
-                <h1>Registrate</h1>
-                <form action="registro.html" method="get">
+                <h2>Registrate</h2>
+                <form class="formRegister" action="login.html" method="get">
                     <article class="email"> <p class="text1"></p><!--EMAIL-->
                         <label for="email"></label>
-                        <input type="email" name="email" value="" placeholder="Ingrese su email" required>
+                        <input id="mail_reg" type="email" name="email" value="" placeholder="Ingrese su email">
+                        <div class="invalid_mail"></div>
                     </article>
                     <article class="password"> <p class="text1"></p><!--CONTRASEÑA-->
                         <label for="contraseña"></label>
-                        <input type="password" name="contraseña" value="" placeholder="Ingrese su contraseña">
+                        <input id="pass_reg" type="password" name="contraseña" value="" placeholder="Ingrese su contraseña">
+                        <div class="invalid_pass"></div>
                     </article>
                     <article class="password"> <p class="text1"></p><!--REPETIR CONTRASEÑA-->
                         <label for="contraseña"></label>
-                        <input id="contraseña" type="password" name="contraseña" value="" placeholder="Repita su contraseña">
+                        <input id="repeat_reg" type="password" name="contraseña" value="" placeholder="Repita su contraseña">
+                        <div class="invalid_repeat"></div>
                     </article>
                     <article class="options">
                         <label class="terminos" for="terminos"> <!--TÉRMINOS-->
@@ -57,8 +61,11 @@
                     </article>
                 </form>
                 </div>
-            
-
-        </section>
+        </main>
+        <footer>
+            <p>Desarrollado por: Amalvy, Barbero y Damelio</p>
+        </footer>
+        <script src="./js/index.js"></script>
+        <script src="./js/register.js"></script>
     </body>
 </html>

@@ -63,7 +63,7 @@ header{
             border-bottom-left-radius: 5px;
             border: none;
             width: 75%;
-            padding: 5px;
+            padding: 2%;
         }
 
         header form button{
@@ -73,7 +73,7 @@ header{
             background-color: #E63946;
             color: #ffffff;
             width: 25%;
-            padding: 5px;
+            padding: 2%;
             font-size: 1.2vw;
         }
 
@@ -105,7 +105,6 @@ header{
 .main-index{
     background-color: #121212;
     display: flex;
-    justify-content: space-between;
 }
 
 .barra-lateral{
@@ -186,11 +185,13 @@ footer{
     background-color: #E63946;
     color: #ffffff;
     align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
     footer p{
         font-family: "Roboto", sans-serif;
-        margin: 0px 40%;
-        width: 50%;
+        font-size: 1.2vw;
     }
 
 
@@ -260,10 +261,12 @@ footer{
 
             .options {
                 display: flex;
+                flex-direction: column;
+                align-items:flex-start;
                 font-size: 14px;
                 margin-top: 10px;
-                justify-content: flex-start;
                 width: 100%;
+                padding-left: 2%;
             }
 
             .options label{
@@ -282,6 +285,25 @@ footer{
 
             #condiciones{
                 width: 15%;
+            }
+.footer-login{
+    padding: 10px;
+    background-color: #E63946;
+    color: #ffffff;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+    .footer-login p{
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2vw;
+    }
+
+            .formLogin a{
+                color: #E63946;
+                text-decoration: underline;
             }
 
 
@@ -312,11 +334,15 @@ footer{
 
 /* DETALLE DEL PRODUCTO*/
 
-
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
 
 .imagen{
     width: 100%;
     margin-top: 10px;
+    height: 900px;
 
 }
 
@@ -341,7 +367,7 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 10px;
-        font-size: 1.2vw;
+        font-size: 1.4vw;
     }
     .barra-lateral2 a{
         color: #ffffff;
@@ -349,7 +375,7 @@ footer{
     
     .barra-lateral2 h2{
         color: #E63946;
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
 
 .principal2{
@@ -371,13 +397,13 @@ footer{
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
+    align-items: center;
 }
     .tags ol{
         display: flex;
-        width: 23%;
+        width: 250px;
         justify-content: space-between;
         align-items: center;
-        padding-top: 5px;
     }
     .tags ol li{
         color: #ffffff;
@@ -443,28 +469,281 @@ footer{
         border-radius: 30px;
     }
 
-        .reseñas article img{
-            width: 30%;
-        }
-
-        .usuario{
-            font-size: 30px;
-        }
+    .usuario{
+        font-size: 30px;
+    }
 
 @media (max-width: 768px) {
     
     header a {
         width: 25%;
     }
+    header a img {
+        width: 40%;
+    }
     header a h1{
-        font-size: 20px;
+        font-size: 2.6vw;
         width: auto;
     }
     header form{
-        width: 30%;
+        width: 20%;
     }
+        header form input{
+            height: 3vw;
+        }
+        header form button{
+            height: 3vw;
+        }
     header nav{
         width: 23%;
     }
-    
+        header nav ul li{
+            font-size: 2vw;
+        }
+    #buscar_boton p{
+        font-size: 0.8vw;
+    }
+    .barra-lateral{
+        min-width: 20%;
+    }
+        .barra-lateral ul{
+            font-size: 1.7vw;
+        }
+        .barra-lateral h2{
+            font-size: 2.5vw;
+        }
+    .container article{
+        width: 240px;
+    }
+        .container article img{
+            height: 50%;
+        }
+        .container article p{
+            font-size: 10px;
+            padding-right: 5px;
+        }
+    .divlog2{
+        width: 310px;
+    }
+    .principal2 article p{
+        font-size: 10px;
+    }
+    .tags ol{
+        width: 150px;
+        margin-right: 1%;
+    }
+        .tags ol li{
+            font-size: 8px;
+        }
+        .tags div p{
+            font-size: 8px;
+        }
+    .stats{
+    margin: 30px 0;
+    }
+
+    .stats article{
+        width: 30%;
+        height: 150px;
+    }
+        .stats article img{
+            width: 60%;
+        }
+        .stats article p{
+            margin-top: 15px;
+        }
+
+    .reseñas{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+        .reseñas article{
+            margin-top: 10px;
+            gap: 5px;
+            width: 100%;
+            padding: 20px;
+        }
+
+            .reseñas article img{
+                width: 40%;
+            }
 }
+
+
+@media (max-width: 320px){
+        header a{
+            width: 20%;
+        }
+        header a img{
+            width: 80%;
+        }
+        header a h1{
+            display: none;
+            
+        }
+        header form{
+            width: 30%;
+        }
+        header form input{
+            font-size: 7px;
+            height: 10px;
+        }
+        header form button{
+            font-size: 5px;
+            height: 10px;
+        }
+        header nav{
+            width: 25%;
+        }
+        header li a{
+            font-size: 3vw;
+        }
+        #li-home{
+            display: none;
+        }
+    .main-index{
+        flex-direction: column;
+    }
+    .barra-lateral{
+       width: 100%;
+    }
+    .barra-lateral h2{
+        display: none;
+    }
+    .barra-lateral li{
+        font-size: 6vw;
+    }
+    .barra-lateral ul{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .container{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+        .container article{
+            width: 80%;
+        }
+            .container article h3{
+                font-size: 15px;
+            }
+            .container article a button{
+                width: 40%;
+                font-size: 3vw;
+            }
+            .container article p{
+                font-size: 7px;
+            }
+
+    footer p{
+        font-size: 10px;
+    }
+    .footer-login p{
+        font-size: 10px;
+    }
+    .main-index2{
+    flex-direction: column;
+    }
+    .barra-lateral2{
+    width: 100%;
+    }
+        .barra-lateral2 ul{
+            flex-direction: row;
+            font-size: 10px;
+            flex-wrap: wrap;
+        }
+        .barra-lateral2 h2{
+            display: none;
+        }
+        .barra-lateral2 li{
+            font-size: 4vw;
+        }
+    .tags{
+        flex-wrap: wrap;
+    }
+        .tags ol{
+            width: 50%;
+            margin-right: 0;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+            .tags ol li{
+                font-size: 6px;
+            }
+            .tags div p{
+                font-size: 6px;
+                padding: 2px;
+    
+            }
+        .tags div{
+            height: 100%;
+        }
+    .reseñas article p{
+        font-size: 2.5vw;
+    }
+    .principal2 h1{
+        font-size: 20vw;
+    }
+    .principal2 article p{
+        font-size: 7px;
+    }
+    .stats{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+        .stats article{
+            width: 50px;
+            margin-top: 10px;
+            height: 100px;
+        }
+            .stats article p{
+                margin-top: 10px;
+                font-size: 3vw;
+            }
+    .principal h1{
+        font-size: 10vw;
+    }
+    .divlog2{
+        width: 100%;   
+    }
+        .divlog2 .logo{
+            font-size: 8vw;
+        }
+        .divlog2 input{
+            margin: 10px 0;
+        }
+        .divlog2 h2{
+            font-size: 7vw;
+        }
+
+        .divlog2 button {
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: row;
+            width: 20%;
+        }
+            .options label{
+                display: flex;
+                flex-direction: row;
+                font-size: 4vw;
+            }
+        .divlog2 button{
+                font-size: 4vw;
+            }
+
+    .terminos{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #condiciones{
+        width: 100%;
+    }
+}   
